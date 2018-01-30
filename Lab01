@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset= "UTF-8">
+  <title>Advanced Art Work Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ 
+</head>
+<body>
+
+ <div class= "middle">
+ <input type="text" name="random" value="Your Thoughts">
+  <br> 
+</div>
+
+ <div class= "right" id = "right">
+ <div class= "btn">
+<select>
+<ol>
+<optgroup label="Genre">
+  <li><option value= 0>Baroque</option></li>
+  <li><option value= 1>Renaissance</option></li>
+  <li><option value= 2>Realism</option></li>
+   </ol>
+  </select>
+ </div>
+ </div>
+  <div class= "left" id = "right">
+  <div class= "btn">
+<select>
+<ol>
+<optgroup label="Action">
+  <li><option value= 0>Archive</option></li>
+  <li><option value= 1>Edit</option></li>
+  <li><option value= 2>Delete</option></li>
+  <li><option value= 3>Collection</option></li>
+   </ol>
+  </select>
+ </div>
+</div>
+
+
+<form action="">
+<table border="5" bordercolor="black" align="center">
+
+	<tr>
+		<th class="head">Radio Buttons</th>
+		<th class="head">Image</th>
+		<th class="head">Title</th>
+		<th class="head">Artist</th>
+		<th class="head">Year</th>
+		<th class="head">Genre</th>
+		<th class="head">Actions</th>
+		
+	</tr>
+	
+	<tr>
+		<th><input type="radio" name="image1" value="0">The Art of Painting<br></th>
+		<th><img class="fix" src="image1.jpg" alt="The Art of Painting" style="width:200px;height:200px"></th>
+		<td>The Art of Painting</td>
+		<td>Johannes Vermeer</td>
+		<td>1666/1668</td>
+		<td>Genre</td>
+		<td><button type="button">Action1</button><br>
+			<button type="button">Action2</button><br>
+			<button type="button">Action2</button><br>
+			<button type="button">Action3</button></th>
+		
+	</tr>
+	
+	<tr>
+		<th><input type="radio" name="image1" value="0">Mona Lisa<br></th>
+		<th><img class="fix" src="image2.jpg" alt="Beauty" style="width:200px;height:200px"></th>
+		<td>Mona Lisa</td>
+		<td>Leonardo da Vinci</td>
+		<td>1503-1506</td>
+		<td>Genre</td>
+		<td><button type="button">Action1</button><br>
+			<button type="button">Action2</button><br>
+			<button type="button">Action2</button><br>
+			<button type="button">Action3</button></th>
+	</tr>
+	
+	<tr>
+		<th><input type="radio" name="image1" value="0">The Creation of Adam<br></th>
+		<th><img class="fix" src="image3.jpg" alt="Peacock and the lady" style="width:200px;height:200px"></th>
+		<td>The Creation of Adam</td>
+		<td>Michelangelo</td>
+		<td>1512</td>
+		<td>Fresco</td>
+		<td><button type="button">Action1</button><br>
+			<button type="button">Action2</button><br>
+			<button type="button">Action2</button><br>
+			<button type="button">Action3</button></th>
+	</tr>
+
+</table>
+</form>
+</body>
+</html>

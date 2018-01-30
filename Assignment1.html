@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Art Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h1 {
+text-align: center;	
+color: blue;
+}
+.menu {
+	text-align: center;	
+}
+
+.dropbtn {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+}
+.drop {
+    position: relative;
+    display: inline-block;
+}
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+}
+.drop-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.drop-content a:hover {
+	background-color: blue;
+	}
+
+.drop:hover .drop-content {
+    display: block;
+}
+
+.drop:hover .dropbtn {
+    background-color: blue;
+}
+.monalisa, .painting, .water, .arnolfini, .starry, .leonardo, .johannes, .claude, .jan-van, .vincent{
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+   height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
+}
+.monalisa-content, .painting-content, .water-content, .arnolfini-content, .starry-content, .leonardo-content, .johannes-content, .claude-content, .jan-van-content, .vincent-content{
+    background-color: Transparent;
+    margin: auto;
+    padding: 0px;
+    border: 1px solid #888;
+   float: left;
+}
+.monalisa-content2, .painting-content2, .water-content2,  .arnolfini-content2, .starry-content2,  .leonardo-content2, .johannes-content2, .claude-content2, .jan-van-content2, .vincent-content2{
+	text-align: center;
+    background-color: white;
+    margin: auto;
+    padding: 0px;
+    margin-top: 100px;
+    border: 1px solid #888;
+     width: 350px;
+}
+.close, .close1, .close2, .close3, .close4, .close5, .close6, .close7, .close8, .close9 {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus, .close1:hover, .close1:focus, close2:hover, .close2:focus, close3:hover, .close3:focus, close4:hover, .close4:focus, close5:hover, .close5:focus, close6:hover, .close6:focus, close7:hover, .close7:focus, close8:hover, .close8:focus, close9:hover, .close9:focus{
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h1>Art Gallery</h1>
+<h1>Team 18 CPS 630</h1>
+<h1>Tenzing Lama</h1>
+<h1>Isaiah Adekanye</h1>
+ <div class= "menu">
+ <div class="drop">
+  <button class="dropbtn">ArtWorks</button>
+  <div class="drop-content">
+     <button id="mona"><a href="#monalisa">Mona Lisa</a></button>
+     <button id="paint"><a href="#painting">The Art of Painting</a></button>
+      <button id="wat"><a href="#water">Water Lilies</a></button>
+      <button id="arno"><a href="#arnolfini">Arnolfini Portrait</a></button>
+      <button id="star"><a href="#starry">The Starry Night</a></button>
+     </div>
+</div>
+
+  <div class="drop">
+  <button class="dropbtn">Artists</button>
+  <div class="drop-content">
+  <button id="leo"><a href="#leonardo">Leonardo da Vinci</a></button>
+  <button id="joh"><a href="#johannes">Johannes Vermeer</a></button>
+   <button id="cla"><a href="#claude">Claude Monet</a></button>
+   <button id="jan"><a href="#jan-van">Jan van Eyck</a></button>
+   <button id="vin"><a href="#vincent">Vincent van Gogh</a></button>
+  </div>
+</div>
+</div>
+
+
+<div id="monalisa" class="monalisa">
+  <div class="monalisa-content">
+   <span class="close">&times;</span>
+    <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/687px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" width= "300vw" >
+    </div>
+  <div class="monalisa-content2">
+ <p>Date of production: 1503 <br>
+ 	 Type of the painting colors: Oil Paints <br>
+ 	 Dimensions of the painting: 77 cm x 53 cm <br>
+ 	 (30 in x 21 in) <br>
+ 	 Location it is currently being saved: Paris <br>
+ 	 Artist name who created it: Leonardo Da Vinci <br>
+ 	Price if it is available:  Not available for sale <br>
+    Genres of the painting: Portrait <br>
+    	</p>
+ </div>
+</div>
+
+<div id="painting" class="painting">
+  <div class="painting-content">
+  <span class="close1">&times;</span>
+      <img src= "https://upload.wikimedia.org/wikipedia/commons/5/5e/Jan_Vermeer_-_The_Art_of_Painting_-_Google_Art_Project.jpg" width= "300vw" >
+    </div>
+  <div class="painting-content2">
+ <p>Date of production: 1666 <br>
+ 	 Type of the painting colors: Oil on canvas <br>
+ 	 Dimensions of the painting: 130 cm x 110 cm <br>
+ 	 (51 in x 43 in) <br>
+ 	 Location it is currently being saved:  Kunsthistorisches Museum <br>
+ 	 Artist name who created it:  Johannes Vermeer<br>
+ 	Price if it is available:  Not available for sale <br>
+    Genres of the painting: Genre art<br>
+    	</p>
+ </div>
+</div>
+
+<div id="water" class="water">
+  <div class="water-content">
+  <span class="close2">&times;</span>
+      <img src= "https://i.ytimg.com/vi/XeApLWd7240/maxresdefault.jpg" width= "300vw" >
+    </div>
+  <div class="water-content2">
+ <p>Date of production: 1919 <br>
+ 	 Type of the painting colors: Oil on canvas <br>
+ 	 Dimensions of the painting: 200 cm x 1276 cm<br>
+    (78.74 x 502.36 in) <br>
+ 	 Location it is currently being saved:  Museum of Modern Art, New York City <br>
+ 	 Artist name who created it:  Claude Monet<br>
+ 	Price if it is available:  Not available for sale <br>
+    Genres of the painting: Landscape painting<br>
+    	</p>
+ </div>
+</div>
+
+<div id="arnolfini" class="arnolfini">
+  <div class="arnolfini-content">
+  <span class="close3">&times;</span>
+      <img src= "https://upload.wikimedia.org/wikipedia/commons/3/33/Van_Eyck_-_Arnolfini_Portrait.jpg" width= "300vw" >
+    </div>
+  <div class="arnolfini-content2">
+ <p>Date of production: 1434<br>
+ 	 Type of the painting colors: Oil on canvas <br>
+ 	 Dimensions of the painting: 82 cm x 60 cm<br>
+ 	 Location it is currently being saved:  National Gallery, London<br>
+ 	 Artist name who created it:  Jan van Eyck<br>
+ 	Price if it is available:  Not available for sale <br>
+    Genres of the painting:  Northern Renaissance, Early renaissance<br>
+    	</p>
+ </div>
+</div>
+
+
+<div id="starry" class="starry">
+  <div class="starry-content">
+  <span class="close4">&times;</span>
+      <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" width= "300vw" >
+    </div>
+  <div class="starry-content2">
+ <p>Date of production: 1889<br>
+ 	 Type of the painting colors: Oil on canvas <br>
+ 	 Dimensions of the painting: 74 cm x 92 cm<br>
+ 	 Location it is currently being saved:  Museum of Modern Art<br>
+ 	 Artist name who created it:  Vincent van Gogh<br>
+ 	Price if it is available:  Not available for sale <br>
+    Genres of the painting:  Landscape painting<br>
+    	</p>
+ </div>
+</div>
+<div id="leonardo" class="leonardo">
+  <div class="leonardo-content">
+  <span class="close5">&times;</span>
+      <img src= "https://www.biography.com/.image/t_share/MTIwNjA4NjMzNTM4NTEyMzk2/leonardo-da-vinci-40396-1-402.jpg" width= "300vw" >
+    </div>
+  <div class="leonardo-content2">
+ <p>Date of birth: April 15, 1452<br>
+ 	Death of the artist: May 2, 1519 <br>
+ 	Place of living: Florence <br>
+   Genres of his/her paintings: High Renaissance<br>
+   	Famous piece of work: Mona Lisa<br>
+     	</p>
+ </div>
+</div>
+
+
+<div id="johannes" class="johannes">
+  <div class="johannes-content">
+  <span class="close6">&times;</span>
+      <img src= "https://www.thefamouspeople.com/profiles/images/johannes-vermeer-1.jpg" width= "300vw" >
+    </div>
+  <div class="johannes-content2">
+ <p>Date of birth: October 31, 1632<br>
+ 	Death of the artist: December 15, 1675<br>
+ 	Place of living: Delft<br>
+   Genres of his/her paintings: Baroque, Dutch Golden Age<br>
+   	Famous piece of work: The Art of Painting<br>
+    	</p>
+ </div>
+</div>
+
+<div id="claude" class="claude">
+  <div class="claude-content">
+  <span class="close7">&times;</span>
+      <img src= "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_80%2Cw_300/MTE5NDg0MDU1MDcyNzY5NTUx/claude-monet-9411771-2-402.jpg" width= "300vw" >
+    </div>
+  <div class="claude-content2">
+ <p>Date of birth: November 14, 1840<br>
+ 	Death of the artist: December 5, 1926<br>
+ 	Place of living: Giverny, Paris<br>
+   Genres of his/her paintings: Impressionism, Modern art<br>
+   	Famous piece of work: Water Lilies<br>
+    	</p>
+ </div>
+</div>
+
+<div id="jan-van" class="jan-van">
+  <div class="jan-van-content">
+  <span class="close8">&times;</span>
+      <img src= "https://upload.wikimedia.org/wikipedia/commons/e/e0/Man_in_a_Blue_Cap_-_Jan_van_Eyck_-_Google_Cultural_Institute.jpg" width= "300vw" >
+    </div>
+  <div class="jan-van-content2">
+ <p>Date of birth: 1390<br>
+ 	Death of the artist: July 9, 1441<br>
+ 	Place of living: Maastricht, Netherlands<br>
+   Genres of his/her paintings: Renaissance, Dutch and Flemish Renaissance painting<br>
+   	Famous piece of work: Arnolfini Portrait<br>
+    	</p>
+ </div>
+</div>
+
+<div id="vincent" class="vincent">
+  <div class="vincent-content">
+  <span class="close9">&times;</span>
+      <img src= "https://upload.wikimedia.org/wikipedia/commons/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg" width= "300vw" >
+    </div>
+  <div class="vincent-content2">
+ <p>Date of birth: March 30, 1853<br>
+ 	Death of the artist: July 29, 1890<br>
+ 	Place of living: France<br>
+   Genres of his/her paintings: Neo-impressionism, Pointillism, Post-Impressionism<br>
+   	Famous piece of work: The Starry Night<br>
+    	</p>
+ </div>
+</div>
+
+
+<script>
+var modal = document.getElementById('monalisa');
+var btn = document.getElementById("mona");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+var modal1 = document.getElementById('painting');
+var btn1 = document.getElementById("paint");
+var span1 = document.getElementsByClassName("close1")[0];
+btn1.onclick = function() {
+    modal1.style.display = "block";
+}
+span1.onclick = function() {
+    modal1.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+
+var modal2 = document.getElementById('water');
+var btn2 = document.getElementById("wat");
+var span2 = document.getElementsByClassName("close2")[0];
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+span2.onclick = function() {
+    modal2.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+
+
+var modal3 = document.getElementById('arnolfini');
+var btn3 = document.getElementById("arno");
+var span3 = document.getElementsByClassName("close3")[0];
+btn3.onclick = function() {
+    modal3.style.display = "block";
+}
+span3.onclick = function() {
+    modal3.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
+}
+
+var modal4 = document.getElementById('starry');
+var btn4 = document.getElementById("star");
+var span4 = document.getElementsByClassName("close4")[0];
+btn4.onclick = function() {
+    modal4.style.display = "block";
+}
+span4.onclick = function() {
+    modal4.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal4) {
+        modal4.style.display = "none";
+    }
+}
+
+var modal5 = document.getElementById('leonardo');
+var btn5 = document.getElementById("leo");
+var span5 = document.getElementsByClassName("close5")[0];
+btn5.onclick = function() {
+    modal5.style.display = "block";
+}
+span5.onclick = function() {
+    modal5.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal5) {
+        modal5.style.display = "none";
+    }
+}
+
+
+var modal6 = document.getElementById('johannes');
+var btn6 = document.getElementById("joh");
+var span6 = document.getElementsByClassName("close6")[0];
+btn6.onclick = function() {
+    modal6.style.display = "block";
+}
+span6.onclick = function() {
+    modal6.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal6) {
+        modal6.style.display = "none";
+    }
+}
+
+var modal7 = document.getElementById('claude');
+var btn7 = document.getElementById("cla");
+var span7 = document.getElementsByClassName("close7")[0];
+btn7.onclick = function() {
+    modal7.style.display = "block";
+}
+span7.onclick = function() {
+    modal7.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal7) {
+        modal7.style.display = "none";
+    }
+}
+
+
+var modal8 = document.getElementById('jan-van');
+var btn8 = document.getElementById("jan");
+var span8 = document.getElementsByClassName("close8")[0];
+btn8.onclick = function() {
+    modal8.style.display = "block";
+}
+span8.onclick = function() {
+    modal8.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal8) {
+        modal8.style.display = "none";
+    }
+}
+
+
+var modal9 = document.getElementById('vincent');
+var btn9 = document.getElementById("vin");
+var span9 = document.getElementsByClassName("close9")[0];
+btn9.onclick = function() {
+    modal9.style.display = "block";
+}
+span9.onclick = function() {
+    modal9.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal9) {
+        modal9.style.display = "none";
+    }
+}
+
+
+</script>
+
+</body>
+</html>

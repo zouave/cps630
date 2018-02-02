@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html>
+
+ <head>
+
+  <meta charset= "UTF-8">
+
+  <title>Advanced Art Work Search</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">\
+
+</script>
+
+<style>
+
+ body{
+
+font-family:Georgia, "Times New Roman", Times, serif;
+
+background: white;
+
+}
+
+.right {
+
+        float:right;
+
+}
+
+.left {
+
+        float:left;
+
+}
+
+select{
+
+    background-color: blue;
+
+    color: white;
+
+    padding: 25px 32px;
+
+    font-size: 20px;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+li{
+
+  display: block;
+
+  list-style-position: inside;
+
+
+
+}
+
+.middle {
+
+        position: relative;
+
+        top: 5%;
+
+        left: 45%;
+
+margin-bottom: 50px;
+
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+ <div class= "middle">
+
+ <input type="text" name="random" value="Your Thoughts">
+
+  <br>
+
+</div>
+
+
+
+ <div class= "right" id = "right">
+
+ <div class= "btn">
+
+<select>
+
+<ol>
+
+<optgroup label="Genre">
+
+  <li><option value= 0>Baroque</option></li>
+
+  <li><option value= 1>Renaissance</option></li>
+
+  <li><option value= 2>Realism</option></li>
+
+   </ol>
+
+  </select>
+
+ </div>
+
+ </div>
+
+  <div class= "left" id = "right">
+
+  <div class= "btn">
+
+<select>
+
+<ol>
+
+<optgroup label="Action">
+
+  <li><option value= 0>Archive</option></li>
+
+  <li><option value= 1>Edit</option></li>
+
+  <li><option value= 2>Delete</option></li>
+
+  <li><option value= 3>Collection</option></li>
+
+   </ol>
+
+  </select>
+
+ </div>
+
+</div>
+
+<table border="5" bordercolor="black" align="center" width="800px" height= "600px" >
+
+        <tr>
+                <th class="head">Radio Buttons</th>
+                <th class="head">Image</th>
+                <th class="head">Title</th>
+                <th class="head">Artist</th>
+                <th class="head">Year</th>
+                <th class="head">Genre</th>
+                <th class="head">Actions</th>
+
+  </tr>
+
+        <tr>
+                <th>
+
+                 <input type="radio" id="fader" name="fadein" value="fadein1">Fade In<br>
+                 <input type="radio" id= "fader1" name="fadein" value="fadeout1">Fade Out<br>
+
+               </th>
+                <th><img class="fix1" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Jan_Vermeer_-_The_Art_of_Painting_-_Google_Art_Project.jpg"   style="width:200px;height:200px"></th>
+                <td>
+
+                 <input type="radio" id="fader6" name="fadein3" value="fadein1">Fade In<br>
+                 <input type="radio" id= "fader7" name="fadein3" value="fadeout1">Fade Out<br>
+                <p class= "joo"> The Art of Painting</p></td>
+                <td> <p class= "joo">Johannes Vermeer</p></td>
+                <td> <p class= "joo">1666/1668</p></td>
+                <td> <p class= "joo">Genre</p></td>
+                <td><button type="button">Action1</button><br>
+                        <button type="button">Action2</button><br>
+                        <button type="button">Action2</button><br>
+                        <button type="button">Action3</button></th>
+
+        </tr>
+
+  <tr>
+                <th>
+
+                <input type="radio" id="fader2" name="fadein1" value="fadein1">Fade In<br>
+                 <input type="radio" id= "fader3" name="fadein1" value="fadeout1">Fade Out<br>
+
+</th>
+                <th><img class="fix2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/687px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Beauty" style="width:200px;height:200px">
+                </th>
+                <td>
+                 <input type="radio" id="fader8" name="fadein4" value="fadein1">Fade In<br>
+                 <input type="radio" id= "fader9" name="fadein4" value="fadeout1">Fade Out<br>
+
+                    <p class = "boo">Mona Lisa</p></td>
+                <td> <p class = "boo">Leonardo da Vinci</p></td>
+                <td> <p class = "boo">1503-1506</p></td>
+                <td> <p class = "boo">Genre</p></td>
+                <td><button type="button">Action1</button><br>
+                        <button type="button">Action2</button><br>
+                        <button type="button">Action2</button><br>
+                        <button type="button">Action3</button></th>
+        </tr>
+
+	<tr>
+ <th>
+                 <input type="radio" id="fader4" name="fadein2" value="fadein1">Fade In<br>
+                 <input type="radio" id= "fader5" name="fadein2" value="fadeout1">Fade Out<br>
+
+</th>
+                <th><img class="fix3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/%27Adam%27s_Creation_Sistine_Chapel_ceiling%27_by_Michelangelo_JBU33cut.jpg/600px-%27Adam%27s_Creation_Sistine_Chapel_ceiling%27_by_Michelangelo_JBU33cut.jpg" alt="Peacock and the lady" style="width:200px;height:200px">
+</th>
+                <td>
+                  <input type="radio" id="fader10" name="fadein5" value="fadein1">Fade In<br>
+                 <input type="radio" id= "fader11" name="fadein5" value="fadeout1">Fade Out<br>
+
+<p class = "soo">The Creation of Adam</p></td>
+                <td><p class = "soo">Michelangelo</p></td>
+                <td><p class = "soo">1512</p></td>
+                <td><p class = "soo">Fresco</p></td>
+                <td><button type="button">Action1</button><br>
+                        <button type="button">Action2</button><br>
+                        <button type="button">Action2</button><br>
+                        <button type="button">Action3</button></th>
+        </tr>
+
+</table>
+<script>
+     $(document).ready(function() {
+        $("#fader").click(function()
+        {    $(".fix1").fadeIn("slow");  });
+
+        $("#fader1").click(function()
+        {    $(".fix1").fadeOut("slow");  });
+        $("#fader2").click(function()
+        {    $(".fix2").fadeIn("slow");  });
+
+        $("#fader3").click(function()
+        {    $(".fix2").fadeOut("slow");  });
+       $("#fader4").click(function()
+        {    $(".fix3").fadeIn("slow");  });
+
+        $("#fader5").click(function()
+        {    $(".fix3").fadeOut("slow");  });
+       $("#fader6").click(function()
+        {    $(".joo").fadeIn("slow");  });
+
+        $("#fader7").click(function()
+        {    $(".joo").fadeOut("slow");  });
+      $("#fader8").click(function()
+        {    $(".boo").fadeIn("slow");  });
+
+ $("#fader9").click(function()
+        {    $(".boo").fadeOut("slow");  });
+     $("#fader10").click(function()
+        {    $(".soo").fadeIn("slow");  });
+
+        $("#fader11").click(function()
+        {    $(".soo").fadeOut("slow");  });
+
+
+            });
+
+</script>
+</body>
+</html>
+
+
